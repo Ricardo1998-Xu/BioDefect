@@ -44,12 +44,12 @@ BioDefect/
 ---
 
 ## 📊 Dataset
-Existing defect detection datasets are mainly constructed from large-scale, mature software engineering projects, which differ significantly from bioinformatics software in terms of **programming languages, coding standards, and defect patterns**. BioDefect, built from real bioinformatics software, integrates these characteristics to **enhance the precision of defect detection** in this domain.
+Existing defect detection datasets are mainly constructed from large-scale, mature software engineering projects, which differ significantly from bioinformatics software in terms of **programming languages, coding standards, and defect patterns**. BioDefect, built from real bioinformatics software, integrates these characteristics to enhance the precision of defect detection in this domain.
 - ✅ **Programming Languages:** Due to its specialized application scenarios, bioinformatics software is predominantly developed in Python (for data processing and analysis) and R (for statistical analysis and visualization). However, most widely used defect detection datasets focus on C/C++ and Java. This discrepancy in programming languages suggests that existing datasets may not be well-suited for detecting defects in bioinformatics software. Additionally, some bioinformatics software projects employ multi-language development, further complicating defect detection when using existing datasets.
 - ✅ **Coding Conventions:** Bioinformatics software is often developed by academic researchers, many of whom lack formal software engineering backgrounds. As a result, bioinformatics software frequently exhibits diverse coding styles, non-standard practices, and a lack of clear module separation. These irregularities make it difficult for existing datasets to effectively address the defects present in such unstructured code.
 - ✅ **Defect Patterns:** Defects in bioinformatics software go beyond common code errors and extend to algorithmic errors that can lead to incorrect biological inferences or inaccurate computational results. For example, an error in genomic sequence alignment might not cause a runtime failure or crash, yet it could yield misleading biological conclusions. Existing datasets primarily focus on conventional software defects (e.g., security vulnerabilities, memory issues), which may be insufficient for detecting the unique types of defects encountered in bioinformatics software.
 
-BioDefect consists of **a primary training set and three independent test sets**, including the entire source code repository containing defective code, making it more representative of real-world bioinformatics software defects. This ensures **comprehensive and precise model evaluation across various scenarios**. Additionally, BioDefect addresses **label inconsistency through manual verification and improved data collection strategies** while mitigating **data leakage using a software time-series approach**.
+BioDefect consists of a primary training set and three independent test sets, including the entire source code repository containing defective code, making it more representative of real-world bioinformatics software defects. This ensures comprehensive and precise model evaluation across various scenarios. Additionally, BioDefect addresses label inconsistency through manual verification and improved data collection strategies while mitigating data leakage using a software time-series approach.
 
 Each sample in BioDefect includes the following information:
 - ✅**Project**: The name of the project the sample belongs to.
@@ -58,7 +58,7 @@ Each sample in BioDefect includes the following information:
 - ✅**Func**: The source code of the function.
 - ✅**Idx**: The sample index number.
 
-To facilitate future research, we provide **detailed defect function information** in `Dataset/BioDefect/details.xlsx`.
+To facilitate future research, we provide detailed defect function information in `Dataset/BioDefect/details.xlsx`.
 
 ---
 
