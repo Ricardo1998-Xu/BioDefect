@@ -1,4 +1,4 @@
-# BioDefect: The First Dataset for Defect Detection in Bioinformatics
+# BioDefect: The First Dataset for Defect Detection in Bioinformatics Software
 
 ## 🚀 Overview
 **BioDefect** is the first dataset specifically designed for defect detection in bioinformatics software. Existing defect detection datasets, such as **Devign** and **REVEAL**, fail to generalize to bioinformatics due to the unique characteristics of bioinformatics code. 
